@@ -39,9 +39,9 @@ img {
   padding: 90px 0;
 }
 
-.section:nth-of-type(odd) {
+/* .section:nth-of-type(odd) {
   background-color: #f7f7f7;
-}
+} */
 
 .container {
   max-width: 1340px;
@@ -266,6 +266,7 @@ cursor: pointer;
 .skill {
   display: flex;
   flex-direction: row;
+  margin-top: 5%;
 }
 
 .skill-bottom-space {
@@ -540,8 +541,7 @@ cursor: pointer;
 
   .skill {
     display: block;
-    margin-top: 10%;
-    border: red 1px solid;
+    margin-top: 5%;
   }
 
   .chart {

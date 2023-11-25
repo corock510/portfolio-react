@@ -256,7 +256,7 @@ const Skill = () => {
             </div>
           </div>
 
-          <div className="skill-space"></div>
+          {/* <div className="skill-space"></div>
 
           <div className="skill">
             <div style={chart} className="chart">
@@ -326,7 +326,7 @@ const Skill = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="skill-bottom-space" />
         </div>
