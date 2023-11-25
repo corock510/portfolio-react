@@ -7,17 +7,17 @@ import ImgCss from "./img/lang/css-3.svg";
 import ImgJs from "./img/lang/js.svg";
 import ImgReact from "./img/lang/react.svg";
 import ImgVue from "./img/lang/vue.svg";
-import ImgMui from "./img/lang/mui.svg";
+import ImgBootstrap from "./img/lang/bootstrap.svg";
 import ImgDotnet from "./img/lang/dotnet.svg";
-import ImgPosgre from "./img/lang/postgresql.svg";
-import ImgApi from "./img/lang/api.svg";
+import ImgDb from "./img/lang/db.svg";
+import ImgLaravel from "./img/lang/Laravel.png";
 import ImgAws from "./img/lang/aws.svg";
 import ImgDocker from "./img/lang/docker.svg";
 import ImgFirebase from "./img/lang/firebase.svg";
 import ImgCubase from "./img/lang/cubase.png";
 import ImgBass from "./img/lang/bass.png";
 import ImgMovie from "./img/lang/movie.png";
-import ImgCard from "./img/lang/card.png";
+import ImgDumbbell from "./img/lang/dumbbell.svg";
 import ImgCamp from "./img/lang/camp.png";
 import ImgSauna from "./img/lang/sauna.png";
 
@@ -47,11 +47,11 @@ const chart = {
 };
 
 const dataFrontend = {
-  labels: ["HTML5", "CSS3", "JavaScript", "React", "Vue.js", "Material-UI"],
+  labels: ["HTML5", "CSS3", "JavaScript", "React", "Vue.js", "Bootstrap"],
   datasets: [
     {
-      label: "front-end",
-      data: [2, 2, 3, 3, 1, 2],
+      label: "frontend",
+      data: [3, 3, 4, 2, 4, 4],
       backgroundColor: "rgba(255, 99, 132, 0.2)",
       borderColor: "rgba(255, 99, 132, 1)",
       borderWidth: 2,
@@ -60,11 +60,11 @@ const dataFrontend = {
 };
 
 const dataBackend = {
-  labels: ["C#/.Net", "PostgreSQL", "REST API", "AWS", "Docker", "Firebase"],
+  labels: ["PHP/Laravel", "C#/.Net", "DB", "AWS", "Docker", "Firebase"],
   datasets: [
     {
-      label: "back-end",
-      data: [3, 3, 3, 2, 2, 2],
+      label: "backend/infra",
+      data: [4, 3, 4, 3, 2, 2],
       backgroundColor: "rgba(0,153,255,0.2)",
       borderColor: "rgba(0,153,255,1)",
       borderWidth: 2,
@@ -77,7 +77,7 @@ const dataOther = {
     "作曲/DTM",
     "エレキベース",
     "動画編集",
-    "人狼/ボードゲーム",
+    "筋トレ",
     "キャンプ",
     "サウナ",
   ],
@@ -141,7 +141,7 @@ const Skill = () => {
                 <div className="skill-body">
                   <h3 className="skill-name">JavaScript</h3>
                   <p className="skill-text">
-                    基本的なDOM操作まではできます。TypeScriptも使用可能です。
+                    基本的なDOM操作が可能。TypeScriptも使用可能です。
                   </p>
                 </div>
               </div>
@@ -152,7 +152,7 @@ const Skill = () => {
                 <div className="skill-body">
                   <h3 className="skill-name">React</h3>
                   <p className="skill-text">
-                    一番得意なJavaScriptライブラリです。このポートフォリオもReactで作成しました。
+                    個人開発で少し勉強中。このポートフォリオをReactで作成しました。
                   </p>
                 </div>
               </div>
@@ -162,23 +162,25 @@ const Skill = () => {
                 </p>
                 <div className="skill-body">
                   <h3 className="skill-name">Vue.js</h3>
-                  <p className="skill-text">少しだけ勉強しました。</p>
+                  <p className="skill-text">
+                    業務経験2年。メインで使用してます。
+                  </p>
                 </div>
               </div>
               <div className="skill-item">
                 <p className="skill-img">
-                  <img src={ImgMui} alt="" />
+                  <img src={ImgBootstrap} alt="" />
                 </p>
                 <div className="skill-body">
-                  <h3 className="skill-name">Material-UI</h3>
+                  <h3 className="skill-name">Bootstrap</h3>
                   <p className="skill-text">
-                    CSSライブラリで使用頻度が一番高いです。
+                    基本的なレスポンシブデザイン程度であれば記述できます。
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="skill-space" />
+          <div className="skill-space"></div>
           <div className="skill">
             <div style={chart} className="chart">
               <Radar data={dataBackend} options={options} />
@@ -186,34 +188,35 @@ const Skill = () => {
             <div className="skill-list">
               <div className="skill-item">
                 <p className="skill-img">
+                  <img src={ImgLaravel} alt="" />
+                </p>
+                <div className="skill-body">
+                  <h3 className="skill-name">PHP/Laravel</h3>
+                  <p className="skill-text">
+                    実務経験2年。MVCでWebアプリを0から構築可能。マイクロサービス化も経験あり。
+                  </p>
+                </div>
+              </div>
+              <div className="skill-item">
+                <p className="skill-img">
                   <img src={ImgDotnet} alt="" />
                 </p>
                 <div className="skill-body">
                   <h3 className="skill-name">C#/.Net</h3>
                   <p className="skill-text">
-                    前職で3年間WebAPI開発を.NetCoreで行いました。EFCore、Dapperを使ったDB操作のプログラムが得意です。
+                    実務経験3年間。EFCore、DapperなどORMを使ってました。WebAPIを開発していました。
                   </p>
                 </div>
               </div>
               <div className="skill-item">
                 <p className="skill-img">
-                  <img src={ImgPosgre} alt="" />
+                  <img src={ImgDb} alt="" />
                 </p>
                 <div className="skill-body">
-                  <h3 className="skill-name">PostgreSQL</h3>
+                  <h3 className="skill-name">DB</h3>
                   <p className="skill-text">
-                    基本的なCRUD操作は勿論、テーブル設計や正規化等を前職で行いました。
-                  </p>
-                </div>
-              </div>
-              <div className="skill-item">
-                <p className="skill-img">
-                  <img src={ImgApi} alt="" />
-                </p>
-                <div className="skill-body">
-                  <h3 className="skill-name">RESTAPI</h3>
-                  <p className="skill-text">
-                    RESTAPIの設計、開発を前職で行いました。
+                    テーブル設計やDBチューニングも対応可能。MySQLとPostgresQLが得意です。OSSDB
+                    Silver取得。
                   </p>
                 </div>
               </div>
@@ -253,7 +256,7 @@ const Skill = () => {
             </div>
           </div>
 
-          <div className="skill-space" />
+          <div className="skill-space"></div>
 
           <div className="skill">
             <div style={chart} className="chart">
@@ -287,19 +290,17 @@ const Skill = () => {
                 <div className="skill-body">
                   <h3 className="skill-name">動画編集</h3>
                   <p className="skill-text">
-                    自分のバンドの動画をAviUtlで作った程度です。
+                    自分のバンドの動画をAviUtlで作ったりしてました。
                   </p>
                 </div>
               </div>
               <div className="skill-item">
                 <p className="skill-img">
-                  <img src={ImgCard} alt="" />
+                  <img src={ImgDumbbell} alt="" />
                 </p>
                 <div className="skill-body">
-                  <h3 className="skill-name">人狼/ボードゲーム</h3>
-                  <p className="skill-text">
-                    大好きです。誰か一緒にやりましょう。
-                  </p>
+                  <h3 className="skill-name">筋トレ</h3>
+                  <p className="skill-text">ベンチプレスMAX現在80kg。</p>
                 </div>
               </div>
               <div className="skill-item">

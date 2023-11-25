@@ -18,9 +18,9 @@ const Main = () => {
         <About />
       </section>
 
-      <section id="works">
+      {/* <section id="works">
         <Works />
-      </section>
+      </section> */}
 
       <section id="skill">
         <Skill />

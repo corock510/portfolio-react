@@ -20,11 +20,11 @@ const Header = () => {
                   ABOUT
                 </Scroll>
               </li>
-              <li className="gnav-item">
+              {/* <li className="gnav-item">
                 <Scroll to="works" smooth={true} duration={300}>
                   WORKS
                 </Scroll>
-              </li>
+              </li> */}
               <li className="gnav-item">
                 <Scroll to="skill" smooth={true} duration={300}>
                   SKILLS

@@ -540,6 +540,8 @@ cursor: pointer;
 
   .skill {
     display: block;
+    margin-top: 10%;
+    border: red 1px solid;
   }
 
   .chart {
